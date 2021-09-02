@@ -42,6 +42,8 @@ hexo s
   hexo d
 ```
 
+<!--more-->
+
 # 连接 github 与本地
 
 - 在 git bash 中根据注册 github 的信息设置用户名和邮箱

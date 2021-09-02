@@ -21,6 +21,8 @@ tags: github
 185.199.111.153  assets-cdn.github.com
 ```
 
+<!--more-->
+
 # 刷新 DNS 缓存
 
 ```
