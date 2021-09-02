@@ -20,14 +20,17 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","version":"8.7.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+<meta name="description" content="常用命令 安装 git 部署插件  1npm i --save hexo-deployer-git   清理当前静态文件  1hexo clean   新建文章  1hexo new post &quot;article title&quot;   生成静态文件  1hexo g   启动本地博客服务  1hexo s   发布至 github 仓库  1hexo d  连接 github 与本地">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo 基本操作">
+<meta property="og:title" content="关于hexo">
 <meta property="og:url" content="http://example.com/2021/08/26/hexo-%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/index.html">
 <meta property="og:site_name" content="夷陵炎之男玄德">
+<meta property="og:description" content="常用命令 安装 git 部署插件  1npm i --save hexo-deployer-git   清理当前静态文件  1hexo clean   新建文章  1hexo new post &quot;article title&quot;   生成静态文件  1hexo g   启动本地博客服务  1hexo s   发布至 github 仓库  1hexo d  连接 github 与本地">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-08-26T06:41:43.000Z">
-<meta property="article:modified_time" content="2021-08-26T06:41:43.952Z">
+<meta property="article:modified_time" content="2021-09-02T02:11:42.381Z">
 <meta property="article:author" content="夷陵炎之男玄德">
+<meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary">
 
 
@@ -35,10 +38,10 @@
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2021/08/26/hexo-%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/","path":"2021/08/26/hexo-基本操作/","title":"hexo 基本操作"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2021/08/26/hexo-%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/","path":"2021/08/26/hexo-基本操作/","title":"关于hexo"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>hexo 基本操作 | 夷陵炎之男玄德</title>
+<title>关于hexo | 夷陵炎之男玄德</title>
   
 
 
@@ -92,7 +95,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -105,6 +108,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="nav-number">1.</span> <span class="nav-text">常用命令</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BF%9E%E6%8E%A5-github-%E4%B8%8E%E6%9C%AC%E5%9C%B0"><span class="nav-number">2.</span> <span class="nav-text">连接 github 与本地</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E9%85%8D%E7%BD%AE"><span class="nav-number">3.</span> <span class="nav-text">修改配置</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -121,6 +125,11 @@
           <span class="site-state-item-count">1</span>
           <span class="site-state-item-name">posts</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
 </div>
@@ -172,7 +181,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          hexo 基本操作
+          关于hexo
         </h1>
 
         <div class="post-meta-container">
@@ -185,6 +194,13 @@
 
       <time title="Created: 2021-08-26 14:41:43" itemprop="dateCreated datePublished" datetime="2021-08-26T14:41:43+08:00">2021-08-26</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-09-02 10:11:42" itemprop="dateModified" datetime="2021-09-02T10:11:42+08:00">2021-09-02</time>
+      </span>
 
   
 </div>
@@ -196,7 +212,62 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        
+        <h1 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h1><ul>
+<li>安装 git 部署插件</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>清理当前静态文件</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>新建文章</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new post &quot;article title&quot;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>生成静态文件</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>启动本地博客服务</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>发布至 github 仓库</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<h1 id="连接-github-与本地"><a href="#连接-github-与本地" class="headerlink" title="连接 github 与本地"></a>连接 github 与本地</h1><ul>
+<li>在 git bash 中根据注册 github 的信息设置用户名和邮箱</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &#x27;&lt;username&gt;&#x27;</span><br><span class="line">git config --global user.email &#x27;&lt;user email&gt;&#x27;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>生成密钥 SSH key</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &#x27;user email&#x27;</span><br></pre></td></tr></table></figure>
+
+<p><em>打开 <font color=SkyBlue>github</font>，在头像下面点击 <font color=SkyBlue>settings</font>， 再点击 <font color=SkyBlue>SSH and GPG keys</font>，新建一个 SSH。</em></p>
+<ul>
+<li>输出密钥 并复制 添加至 <font color=SkyBlue>github</font></li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>验证是否连接成功</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+
+<h1 id="修改配置"><a href="#修改配置" class="headerlink" title="修改配置"></a>修改配置</h1><ul>
+<li>打开 <font color=red>_config.yml</font> 配置文件</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: &#x27;git&#x27;</span><br><span class="line">  repo: &#x27;https://github.com/DogGrass/DogGrass.github.io&#x27;</span><br><span class="line">  branch: &#x27;master&#x27;</span><br><span class="line">  message: &#x27;grassdog_blog&#x27;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
     </div>
 
     
@@ -204,6 +275,9 @@
     
 
     <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/hexo/" rel="tag"># hexo</a>
+          </div>
 
         
 

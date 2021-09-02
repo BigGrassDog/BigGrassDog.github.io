@@ -120,6 +120,11 @@
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
   </nav>
 </div>
 
@@ -169,7 +174,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/08/26/hexo-%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" class="post-title-link" itemprop="url">hexo 基本操作</a>
+          <a href="/2021/08/26/hexo-%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" class="post-title-link" itemprop="url">关于hexo</a>
         </h2>
 
         <div class="post-meta-container">
@@ -182,6 +187,13 @@
 
       <time title="Created: 2021-08-26 14:41:43" itemprop="dateCreated datePublished" datetime="2021-08-26T14:41:43+08:00">2021-08-26</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-09-02 10:11:42" itemprop="dateModified" datetime="2021-09-02T10:11:42+08:00">2021-09-02</time>
+      </span>
 
   
 </div>
@@ -193,7 +205,62 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          
+          <h1 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h1><ul>
+<li>安装 git 部署插件</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>清理当前静态文件</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>新建文章</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new post &quot;article title&quot;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>生成静态文件</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>启动本地博客服务</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>发布至 github 仓库</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<h1 id="连接-github-与本地"><a href="#连接-github-与本地" class="headerlink" title="连接 github 与本地"></a>连接 github 与本地</h1><ul>
+<li>在 git bash 中根据注册 github 的信息设置用户名和邮箱</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &#x27;&lt;username&gt;&#x27;</span><br><span class="line">git config --global user.email &#x27;&lt;user email&gt;&#x27;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>生成密钥 SSH key</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &#x27;user email&#x27;</span><br></pre></td></tr></table></figure>
+
+<p><em>打开 <font color=SkyBlue>github</font>，在头像下面点击 <font color=SkyBlue>settings</font>， 再点击 <font color=SkyBlue>SSH and GPG keys</font>，新建一个 SSH。</em></p>
+<ul>
+<li>输出密钥 并复制 添加至 <font color=SkyBlue>github</font></li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>验证是否连接成功</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+
+<h1 id="修改配置"><a href="#修改配置" class="headerlink" title="修改配置"></a>修改配置</h1><ul>
+<li>打开 <font color=red>_config.yml</font> 配置文件</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: &#x27;git&#x27;</span><br><span class="line">  repo: &#x27;https://github.com/DogGrass/DogGrass.github.io&#x27;</span><br><span class="line">  branch: &#x27;master&#x27;</span><br><span class="line">  message: &#x27;grassdog_blog&#x27;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
       
     </div>
 
