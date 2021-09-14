@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: '夷陵炎之男玄德'
-subtitle: ''
-description: ''
+title: '野生代码狗'
+subtitle: '我是一个野生代码狗'
+description: '渴望被家养'
 keywords:
-author: '夷陵炎之男玄德'
-language: en
+author: 'Code Dog'
+language: zh-CN
 timezone: ''
 
 # URL
@@ -46,7 +46,7 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: false
+  auto_detect: true
   tab_replace: ''
   wrap: true
   hljs: false
